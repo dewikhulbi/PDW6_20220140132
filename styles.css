@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Ubah warna latar belakang menjadi hitam */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Jarak antara album-item */
+  margin-top: 20px; /* Menambahkan jarak di atas album */
+}
+
+.album-item {
+  width: 300px;
+  padding: 20px;
+  background-color: #333; /* Warna latar belakang album-item */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+.album-item video,
+.album-item audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.album-item audio {
+  display: none; /* Sembunyikan elemen audio secara default */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.album-item {
+  margin-top: 80px;
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  background-color: #3b2727;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(136, 35, 35, 0.5);
+}
+
+.album-image {
+  position: absolute;
+  top: -210px; /* Menyesuaikan dengan posisi di atas card */
+  left: 50%; /* Posisi di tengah */
+  transform: translateX(-50%); /* Untuk mengatur posisi di tengah */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.album-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(224, 217, 217, 0.5); /* Menambahkan bayangan */
+}
+
+
